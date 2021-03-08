@@ -23,7 +23,8 @@ object Main{
                 case "primes"      =>  draw(points,order,dotColor,primes _)
                 case "random"      =>  draw(points,order,dotColor,random _)
                 case "--help"      =>  println(pritnHelp("Help Menu.",points,order,size,dot))
-                case "-h"      =>  println(pritnHelp("Help Menu.",points,order,size,dot))
+                case "-h"          =>  println(pritnHelp("Help Menu.",points,order,size,dot))
+                case isFile(path)  =>  drawFile(path,order,dotColor)
                 case _             =>  println(pritnHelp("Bad input. Enterd: " + args(0),points,order,size,dot))
                 }
 
@@ -41,7 +42,12 @@ object Main{
     s"""Exmaple(prime, 200000 points, order 10 (WindowSize(1024x1024), white data points):\n $targetBin primes 200000 10 white \n\n""" +
     s"""Exmaple(mumur3, 100000 points, order 9 (WindowSize(512x512), black data points):\n $targetBin murmur3"\n"""
 
-
+    object isFile{
+    def unapply(path: String): Option[String] = {
+      val file = new java.io.File(path)
+        if(file.exists && file.isFile) Some(path) else None
+     }
+    }
 
     def random(i: Int): Int = util.Random.nextInt(10000000)
 
