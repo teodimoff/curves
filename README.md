@@ -38,3 +38,8 @@ sudo apt install libfreetype6-dev libsdl2-ttf-dev libsdl2-ttf-2.0-0 -y;
 ```
 ![](test.gif)
 
+## File Distribution
+```scala
+./example/hashdraw/native/target/scala-2.13/hashdraw-out test.gif
+```
+![](plotfile.gif)
