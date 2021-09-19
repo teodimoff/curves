@@ -85,7 +85,7 @@ void drawGradientAndPointsInternal(int points,int order,int startFrom,int dotCol
 
 }
 
-void drawFileInternal(const char* fileName,int order,int height, int width, int color, long (*hilbertMapping)(int,int))
+void drawFile(const char* fileName,int order,int height, int width, int color, long (*hilbertMapping)(int,int))
 {
 init();
 
