@@ -2,7 +2,7 @@
 ## Curves provide [Hilbert](https://en.wikipedia.org/wiki/Hilbert_curve)   mapping of a **point** from 1D to 2D hilbert space. This means that points closer together from one dimentional space are closer in the other. In other words it preserves locality. 
 ## Curves also provide drawing to visualize datapoints, created from hash functions.
 - [Scala-Native](https://github.com/scala-native/scala-native) with the use of SDL2
-- Online javaScript: https://teodimoff.github.io/curves/
+- Online javascript: https://teodimoff.github.io/curves/
 - more to come
 
 ## Compile
