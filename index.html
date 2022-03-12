@@ -52,9 +52,9 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
+//Check this in both Chrome and Firefox.
 function randomInt() { 
-  return  getRandomInt(Number.MIN_SAFE_INTEGER + 1,Number.MAX_SAFE_INTEGER - 1) 
+  return  getRandomInt(Number.MIN_SAFE_INTEGER,Number.MAX_SAFE_INTEGER)
 }
 
 djb2Code = function(str){
@@ -171,9 +171,9 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
+//Check this in both Chrome and Firefox.
 function randomInt() { 
-  return  getRandomInt(Number.MIN_SAFE_INTEGER + 1,Number.MAX_SAFE_INTEGER - 1) 
+  return  getRandomInt(Number.MIN_SAFE_INTEGER,Number.MAX_SAFE_INTEGER)
 }
 
 djb2Code = function(str){
